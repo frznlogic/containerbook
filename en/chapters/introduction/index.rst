@@ -30,13 +30,15 @@ after an API change.
 Introduction to containers
 ==========================
 
-Linux containers are generally based on two underpinning technologies provided
-by the Linux kernel, the namespaces and cgroups. These are presented in depth in
-separate chapters. 
+Linux containers are generally based on several underpinning technologies provided
+by the Linux kernel, the namespaces and cgroups are very prominent among these.
+These are presented in depth in separate chapters. 
 
 A container can have varying degrees of separation from the main system, a
 separate file system, separate networking stack, separate IPC mechanism, Process
-ID Space, and so on. This separation usually means that the container will need
+ID Space, and so on. 
+
+This separation usually means that the container will need
 to have everything available inside the container to execute. For example, if
 you write a bash script that will perform some network setup before it actually
 sets up a service, then all the tools that bash script tries to use must be
